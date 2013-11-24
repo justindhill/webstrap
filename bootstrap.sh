@@ -7,7 +7,8 @@ if [ $1 == "init" ] ; then
 
 	# init guard file, hiding unimportant messages. should still
 	# report a bad outcome
-	guard init livereload 2>&1 | grep -v INFO
+	#guard init livereload 2>&1 | grep -v INFO
+	cp ~/.web-bootstrap/Guardfile ./
 
 	# make public dir andcopy other webby bootstrapping things
 	# into this directory
