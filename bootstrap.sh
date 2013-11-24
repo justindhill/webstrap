@@ -14,6 +14,9 @@ if [ $1 == "init" ] ; then
 	mkdir public
 	cp -r ~/.web-bootstrap/template/* ./public
 
+	# init a git repository
+	git init && git add . && git commit -m "- Initial commit"
+
 	# put us back where we were
 	cd ..
 
