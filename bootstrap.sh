@@ -12,7 +12,7 @@ if [ $1 == "init" ] ; then
 	# make public dir andcopy other webby bootstrapping things
 	# into this directory
 	mkdir public
-	cp ~/.web-bootstrap/template/* ./public
+	cp -r ~/.web-bootstrap/template/* ./public
 
 	# put us back where we were
 	cd ..
