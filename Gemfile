@@ -3,4 +3,4 @@ source "https://rubygems.org"
 
 gem 'guard'
 gem 'guard-livereload'
-gem 'heel'
+gem 'heel', '>=3.1.3'
